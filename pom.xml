@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2012 Red Hat, Inc. and/or its affiliates.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <!-- That parent extends the org.jboss:jboss-parent -->
+        <groupId>org.jboss.integration-platform</groupId>
+        <artifactId>jboss-integration-platform-parent</artifactId>
+        <!-- Keep in sync with property <version.org.jboss.integration-platform> -->
+        <version>6.0.8.Final</version>
+    </parent>
+
+    <groupId>org.guvnor</groupId>
+    <artifactId>csc-drools-extensions</artifactId>
+    <version>6.5.0.csc-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>csc-drools-extensions</name>
+    <description>CSC - extension to drools</description>
+
+    <properties>
+        <jdk.min.version>1.7.0</jdk.min.version>
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>scandihealth</id>
+            <name>libs-release</name>
+            <url>http://172.19.201.133:8081/artifactory/libs-release</url>
+        </repository>
+        <snapshotRepository>
+            <id>scandihealth</id>
+            <name>libs-snapshot</name>
+            <url>http://172.19.201.133:8081/artifactory/libs-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <modules>
+        <module>guvnor-extensions</module>
+    </modules>
+
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <artifactId>maven-clean-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <filesets>-->
+<!--                        <fileset>-->
+<!--                            <directory>${basedir}</directory>-->
+<!--                            <includes>-->
+<!--                                <include>.errai/**</include>-->
+<!--                                <include>.niogit/**</include>-->
+<!--                                <include>repositories/**</include>-->
+<!--                            </includes>-->
+<!--                        </fileset>-->
+<!--                    </filesets>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+
+<!--        </plugins>-->
+
+<!--    </build>-->
+
+</project>
