@@ -43,12 +43,12 @@
         <repository>
             <id>scandihealth</id>
             <name>libs-release</name>
-            <url>http://172.19.201.133:8081/artifactory/libs-release</url>
+            <url>http://10.0.44.71:8081/artifactory/libs-release</url>
         </repository>
         <snapshotRepository>
             <id>scandihealth</id>
             <name>libs-snapshot</name>
-            <url>http://172.19.201.133:8081/artifactory/libs-snapshot</url>
+            <url>http://10.0.44.71:8081/artifactory/libs-snapshot</url>
         </snapshotRepository>
     </distributionManagement>
 
